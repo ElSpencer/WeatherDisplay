@@ -26,13 +26,13 @@ Where <display_type> is one of:
 """
 )
 
-try:
-    MESSAGE = sys.argv[1]
-except IndexError:
-    pass
+# try:
+#     MESSAGE = sys.argv[1]
+# except IndexError:
+#     pass
 
 try:
-    display_type = sys.argv[2]
+    display_type = sys.argv[1]
 except IndexError:
     display_type = "square"
 
@@ -84,9 +84,9 @@ draw = ImageDraw.Draw(img)
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 30)
 
 #size_x, size_y = textsize(MESSAGE, font)
-
-text_x = disp.width
-text_y = (disp.height - size_y) // 2
+#
+# text_x = disp.width
+# text_y = (disp.height - size_y) // 2
 #getting the starting points for the three lines
 third = disp.width/3
 l1_y=0
