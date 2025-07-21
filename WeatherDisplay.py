@@ -97,12 +97,12 @@ l3_y = 2*third
 l1_text = "28.8"
 l2_text = "56.3 %"
 l3_text = "12 kPa"
-
-draw.rectangle((0, 0, disp.width, disp.height), (0, 0, 0))
-draw.text((0, l1_y), l1_text, font=font, fill=(255, 255, 255))
-draw.text((0, l2_y), l2_text, font=font, fill=(255, 255, 255))
-draw.text((0, l3_y), l3_text, font=font, fill=(255, 255, 255))
-
+while True:
+    draw.rectangle((0, 0, disp.width, disp.height), (0, 0, 0))
+    draw.text((0, l1_y), l1_text, font=font, fill=(255, 255, 255))
+    draw.text((0, l2_y), l2_text, font=font, fill=(255, 255, 255))
+    draw.text((0, l3_y), l3_text, font=font, fill=(255, 255, 255))
+    disp.display(img)
 # t_start = time.time()
 #
 # while True:
